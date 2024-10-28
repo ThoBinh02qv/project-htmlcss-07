@@ -1,5 +1,15 @@
-@use "./components"  as components ;
+@use "../components"  as components ;
 
 .header__inner {
-   @include flex-space-between;
+   @include components.flex-space-between;
+   margin-top: 42px;
+
+}
+
+.nav__header ul { 
+   @include components.flex-gap(48px);
+}
+
+.nav__header__link {
+   @include components.text-nav_link;
 }

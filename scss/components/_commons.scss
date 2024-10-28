@@ -15,4 +15,12 @@ body {
     font-style: normal;
 }
 
+a {
+    text-decoration: none;
+}
+
+button, select, input, textarea {
+    font-size: inherit;
+    font-family: inherit;
+}
 //header

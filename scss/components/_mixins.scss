@@ -1,10 +1,12 @@
+@use "./colors" as *;
+
 @mixin flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-@mixin btn ($width, $height, $tb, $lr) {
+@mixin btn($width, $height, $tb, $lr) {
     width: $width;
     height: $height;
     padding: $tb $lr;
@@ -13,4 +15,54 @@
 @mixin flex-space-between {
     display: flex;
     justify-content: space-between;
+}
+
+@mixin flex-gap($gap) {
+    display: flex;
+    gap: $gap;
+}
+
+// mixins style text
+
+@mixin text-heading-1 {
+    color: $font-color;
+    font-size: 7rem;
+    font-weight: 700;
+    line-height: 1.14;
+}
+
+@mixin text-heading-2 {
+    color: $font-color;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1.23;
+}
+@mixin text-heading-3 {
+    color: $font-color;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+@mixin text-desc-1 {
+    color: $font-color-secondary;
+font-size: 1.8rem;
+line-height: 1.667;
+}
+@mixin text-desc-2 {
+    color: $font-color-secondary;
+font-size: 1.6rem;
+line-height: 1.75;
+}
+@mixin text-nav_link {
+    color: $font-color-secondary;
+font-size: 1.6rem;
+line-height: 1.75;  
+}
+
+@mixin text-link($size, $lh){
+    color: $font-color;
+    font-size: $size;
+    font-weight: 700;
+    line-height: $lh;
 }
