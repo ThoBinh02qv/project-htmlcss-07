@@ -4,6 +4,13 @@
     align-items: center;
 }
 
-@mixin btn {
-    
+@mixin btn ($width, $height, $tb, $lr) {
+    width: $width;
+    height: $height;
+    padding: $tb $lr;
+}
+
+@mixin flex-space-between {
+    display: flex;
+    justify-content: space-between;
 }

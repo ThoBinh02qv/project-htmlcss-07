@@ -1,0 +1,5 @@
+@use "./components"  as components ;
+
+.header__inner {
+   @include flex-space-between;
+}
