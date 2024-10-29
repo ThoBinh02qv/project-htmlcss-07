@@ -159,6 +159,12 @@ button, select, input, textarea {
   font-family: inherit;
 }
 
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .col, .row[class*=row-cols-] > *,
 .row > [class*=col-], .container-fluid, .container {
   padding-left: calc(var(--grid-gutter-x) * 0.5);
@@ -1302,10 +1308,16 @@ button, select, input, textarea {
   --grid-gutter-y: 90px;
 }
 
+.container__header {
+  background: #FFF8F3;
+}
+
 .header__inner {
   display: flex;
   justify-content: space-between;
-  margin-top: 42px;
+  padding-top: 42px;
+  padding-bottom: 20px;
+  background: #FFF8F3;
 }
 
 .nav__header ul {
@@ -1314,9 +1326,61 @@ button, select, input, textarea {
 }
 
 .nav__header__link {
-  color: #665F73;
+  color: #201830;
   font-size: 1.6rem;
+  font-weight: 600;
   line-height: 1.75;
+}
+
+.Sign-up {
+  margin-left: 28px;
+  max-width: 116px;
+  padding: 9px 29px;
+  background: #201830;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.log-in {
+  color: #201830;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.hero-section {
+  padding: 90px 0 140px;
+}
+
+.hero-img {
+  width: 270px;
+  height: 302px;
+}
+
+.hero-avt-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.hero__media-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.play-image {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.waves-image {
+  width: 114px;
+  height: 26px;
 }
 
 /*# sourceMappingURL=main.css.map */

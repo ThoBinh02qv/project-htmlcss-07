@@ -1,15 +1,61 @@
-@use "../components"  as components ;
+@use "../components" as components;
+@use "../components/colors" as *;
 
-.header__inner {
-   @include components.flex-space-between;
-   margin-top: 42px;
-
+.container__header {
+  background: $background-color;
 }
 
-.nav__header ul { 
-   @include components.flex-gap(48px);
+.header__inner {
+  @include components.flex-space-between;
+  padding-top: 42px;
+  padding-bottom: 20px;
+  background: $background-color;
+}
+
+.nav__header ul {
+  @include components.flex-gap(48px);
 }
 
 .nav__header__link {
-   @include components.text-nav_link;
+  @include components.text-nav_link;
+}
+
+.Sign-up {
+  margin-left: 28px;
+  @include components.btn(116px, 9px, 29px);
+  @include components.text-nav_link($font-color-secondary-2);
+}
+
+.log-in {
+  @include components.text-nav_link;
+}
+
+// Hero-section
+
+.hero-section {
+  padding: 90px 0 140px;
+}
+
+.hero-img {
+  @include components.fit-img(270px, 302px);
+}
+
+
+.hero-avt-img {
+  @include components.fit-avt-img(48px);
+}
+
+
+// media-section 2
+
+.hero__media-icon {
+  @include components.fit-avt-img(28px);
+}
+
+.play-image {
+  @include components.fit-avt-img(26px);
+}
+
+.waves-image {
+  @include components.fit-img(114px, 26px);
 }
